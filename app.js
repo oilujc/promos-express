@@ -34,11 +34,11 @@ app.use('/graphql', graphqlHTTP({
 }));
 
 app.get('', (req, res) => {
-    res.send('David Marico!');
+    res.send('Here');
 });
 
 app.get('/hello-world', (req, res) => {
-    res.send('David Marico x2!');
+    res.send('Hello!');
 });
 
 app.listen(3000, () => {
