@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 //const context = () => MongoClient.connect('mongodb://username:password@localhost:27017/database_name', { useNewUrlParser: true }).then(client => client.db('database_name'));
 
 mongoose.connect(
-    'mongodb://localhost/promos-express',  
+    'mongodb://mongo:27017/promosexpress',  
     {
         useUnifiedTopology: true,
         useNewUrlParser: true,
@@ -32,6 +32,14 @@ app.use('/graphql', graphqlHTTP({
         return err
     }
 }));
+
+app.get('', (req, res) => {
+    res.send('David Marico!');
+});
+
+app.get('/hello-world', (req, res) => {
+    res.send('David Marico x2!');
+});
 
 app.listen(3000, () => {
     console.log('Listening on port 3000');
