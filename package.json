@@ -1,0 +1,21 @@
+{
+    "name": "promos-express",
+    "version": "1.0.0",
+    "description": "Promos Express API with GraphQL/MongoDB/Express",
+    "main": "index.js",
+    "scripts": {
+        "start": "node app.js",
+        "dev": "nodemon app.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "express-graphql": "^0.9.0",
+        "graphql": "^14.5.8",
+        "mongoose": "^5.8.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.2"
+    }
+}
